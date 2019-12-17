@@ -121,12 +121,12 @@ add_definitions(${PCL_DEFINITIONS})
 #target_link_libraries (icp ${PCL_LIBRARIES})
 #add_dependencies(icp camera_data_generate_messages_cpp)
 
-add_executable(register_server scripts/Cplus/register_server.cpp)
+add_executable(register_server scripts/cpp/register_server.cpp)
 target_link_libraries(register_server ${catkin_LIBRARIES})
 target_link_libraries(register_server ${PCL_LIBRARIES})
 add_dependencies(register_server camera_data_generate_messages_cpp)
 
-add_executable(plane_detection_server scripts/Cplus/plane_detection_server.cpp)
+add_executable(plane_detection_server scripts/cpp/plane_detection_server.cpp)
 target_link_libraries(plane_detection_server ${catkin_LIBRARIES})
 target_link_libraries(plane_detection_server ${PCL_LIBRARIES})
 add_dependencies(plane_detection_server camera_data_generate_messages_cpp)
@@ -140,7 +140,7 @@ add_dependencies(plane_detection_server camera_data_generate_messages_cpp)
 #target_link_libraries(frames_broadcaster ${catkin_LIBRARIES})
 #target_link_libraries(frames_broadcaster ${PCL_LIBRARIES})
 
-add_executable(region_grow scripts/Cplus/region_grow.cpp)
+add_executable(region_grow scripts/cpp/region_grow.cpp)
 target_link_libraries(region_grow ${catkin_LIBRARIES})
 target_link_libraries(region_grow ${PCL_LIBRARIES})
 
