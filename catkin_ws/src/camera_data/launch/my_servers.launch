@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="cloud_register_server" pkg="camera_data" type="register_server" output="screen"/>
+  <node name="plane_detection_server" pkg="camera_data" type="plane_detection_server" output="screen"/>
+	
+</launch>

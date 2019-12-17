@@ -1,0 +1,4 @@
+float32[] input_points
+---
+float32 height
+float32[] output_points

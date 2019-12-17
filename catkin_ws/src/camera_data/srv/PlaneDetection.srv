@@ -1,0 +1,5 @@
+sensor_msgs/PointCloud2 input_cloud
+---
+float32 height
+sensor_msgs/PointCloud2 plane_cloud
+
